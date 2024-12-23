@@ -23,7 +23,7 @@ func main() {
 	decryptCmd := flag.NewFlagSet("decrypt", flag.ExitOnError)
 	encryptCmd := flag.NewFlagSet("encrypt", flag.ExitOnError)
 
-	password := decryptCmd.String("password", "", "tr@mbone18Pass")
+	password := decryptCmd.String("password", "", "the password used to encrypt the .spass file [required]")
 	file := decryptCmd.String("file", "", "the .spass file to decrypt [required]")
 	format := decryptCmd.String("format", "", "format to output in, available formats: chrome")
 
